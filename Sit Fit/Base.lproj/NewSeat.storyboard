@@ -72,20 +72,37 @@
                                     <action selector="takePicture:" destination="9cg-6p-AhP" eventType="touchUpInside" id="VQu-GW-Ql6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaZ-Rw-wVW">
+                                <rect key="frame" x="20" y="320" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.2086267004" green="0.6528602013" blue="0.86805052859999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OwK-Fn-qr9"/>
+                                </constraints>
+                                <state key="normal" title="Select Venue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yM3-yK-91f" kind="presentation" id="Vxb-mI-gzo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="337-3a-foA" firstAttribute="leading" secondItem="ITT-8r-bI7" secondAttribute="leading" id="1HJ-dg-cr3"/>
+                            <constraint firstAttribute="trailing" secondItem="jaZ-Rw-wVW" secondAttribute="trailing" constant="20" id="DD7-It-5aN"/>
                             <constraint firstAttribute="trailing" secondItem="qfP-Vb-VLt" secondAttribute="trailing" constant="20" id="H2k-UT-vU8"/>
                             <constraint firstItem="G5E-bK-XJE" firstAttribute="leading" secondItem="gFE-4q-DRH" secondAttribute="trailing" constant="20" id="NFg-n1-HkE"/>
                             <constraint firstItem="G5E-bK-XJE" firstAttribute="width" secondItem="gFE-4q-DRH" secondAttribute="width" id="PKB-iU-x0L"/>
                             <constraint firstAttribute="trailing" secondItem="337-3a-foA" secondAttribute="trailing" id="Uxh-Wn-ZeJ"/>
                             <constraint firstAttribute="trailing" secondItem="G5E-bK-XJE" secondAttribute="trailing" constant="20" id="WJK-Fd-6UX"/>
                             <constraint firstItem="qXb-MN-pdz" firstAttribute="top" secondItem="gFE-4q-DRH" secondAttribute="bottom" constant="20" id="Yzi-YR-Nxp"/>
+                            <constraint firstItem="jaZ-Rw-wVW" firstAttribute="top" secondItem="337-3a-foA" secondAttribute="bottom" constant="20" id="Z3H-1k-Bdq"/>
                             <constraint firstItem="qfP-Vb-VLt" firstAttribute="leading" secondItem="ITT-8r-bI7" secondAttribute="leading" constant="20" id="cTm-tx-cbF"/>
                             <constraint firstAttribute="trailing" secondItem="BZb-w8-U2H" secondAttribute="trailing" constant="20" id="hif-j4-Kni"/>
                             <constraint firstItem="qXb-MN-pdz" firstAttribute="top" secondItem="G5E-bK-XJE" secondAttribute="bottom" constant="20" id="i4d-Pz-EQ8"/>
                             <constraint firstItem="BZb-w8-U2H" firstAttribute="top" secondItem="ITT-8r-bI7" secondAttribute="top" constant="240" id="jra-Nk-j5S"/>
+                            <constraint firstItem="jaZ-Rw-wVW" firstAttribute="leading" secondItem="ITT-8r-bI7" secondAttribute="leading" constant="20" id="mfA-lU-JCV"/>
                             <constraint firstItem="qfP-Vb-VLt" firstAttribute="top" secondItem="ITT-8r-bI7" secondAttribute="top" constant="20" id="n8s-Uv-rKa"/>
                             <constraint firstItem="337-3a-foA" firstAttribute="top" secondItem="ITT-8r-bI7" secondAttribute="top" id="pHG-kR-K3e"/>
                             <constraint firstItem="BZb-w8-U2H" firstAttribute="leading" secondItem="ITT-8r-bI7" secondAttribute="leading" constant="20" id="vsb-Po-N7P"/>
@@ -95,22 +112,23 @@
                     <connections>
                         <outlet property="seatImageView" destination="337-3a-foA" id="1b9-mi-vzi"/>
                         <outlet property="seatNameField" destination="qfP-Vb-VLt" id="vlo-jt-Wko"/>
+                        <outlet property="selectVenueButton" destination="jaZ-Rw-wVW" id="btl-fT-5Lu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Uq-9l-4ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439" y="396"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Venues-->
         <scene sceneID="B8i-Gr-U3A">
             <objects>
-                <tableViewController id="eNa-yJ-OPm" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oZv-Ra-PtA">
+                <tableViewController id="eNa-yJ-OPm" customClass="VenuesTableViewController" customModule="Sit_Fit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="oZv-Ra-PtA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WAY-UX-PH7">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="venueCell" rowHeight="70" id="WAY-UX-PH7">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WAY-UX-PH7" id="zNV-ma-ACH">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -122,7 +140,7 @@
                             <outlet property="delegate" destination="eNa-yJ-OPm" id="f54-9J-byO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pb6-cs-wXN"/>
+                    <navigationItem key="navigationItem" title="Venues" id="pb6-cs-wXN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHG-yI-Pa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

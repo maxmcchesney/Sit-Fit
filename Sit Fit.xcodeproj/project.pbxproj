@@ -14,6 +14,8 @@
 		A91B4B561A815B75001A0427 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B551A815B75001A0427 /* FeedData.swift */; };
 		A91B4B571A825FB2001A0427 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052D1A815481008FAFBC /* Parse.framework */; };
 		A91B4B591A83B40F001A0427 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B581A83B40F001A0427 /* FeedCell.swift */; };
+		A91B4B5B1A83CF32001A0427 /* FourSquareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B5A1A83CF32001A0427 /* FourSquareRequest.swift */; };
+		A91B4B5D1A83CFBB001A0427 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B5C1A83CFBB001A0427 /* VenuesTableViewController.swift */; };
 		A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B04FE1A810FAF008FAFBC /* AppDelegate.swift */; };
 		A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B05001A810FAF008FAFBC /* LoginViewController.swift */; };
 		A94B05041A810FAF008FAFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94B05021A810FAF008FAFBC /* Main.storyboard */; };
@@ -28,6 +30,7 @@
 		A94B05331A815481008FAFBC /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052E1A815481008FAFBC /* ParseCrashReporting.framework */; };
 		A94B05341A815481008FAFBC /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052F1A815481008FAFBC /* ParseFacebookUtils.framework */; };
 		A94B05351A815481008FAFBC /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B05301A815481008FAFBC /* ParseUI.framework */; };
+		A99D76611A83FB0E00D4011A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D76601A83FB0E00D4011A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		A91B4B521A815777001A0427 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A91B4B551A815B75001A0427 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		A91B4B581A83B40F001A0427 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		A91B4B5A1A83CF32001A0427 /* FourSquareRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareRequest.swift; sourceTree = "<group>"; };
+		A91B4B5C1A83CFBB001A0427 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		A94B04F91A810FAF008FAFBC /* Sit Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sit Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94B04FD1A810FAF008FAFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94B04FE1A810FAF008FAFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		A94B052F1A815481008FAFBC /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		A94B05301A815481008FAFBC /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		A94B05361A815500008FAFBC /* Sit Fit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sit Fit-Bridging-Header.h"; sourceTree = "<group>"; };
+		A99D76601A83FB0E00D4011A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A91B4B551A815B75001A0427 /* FeedData.swift */,
+				A91B4B5A1A83CF32001A0427 /* FourSquareRequest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 				A94B05251A813101008FAFBC /* FeedTableViewController.swift */,
 				A94B05271A81313D008FAFBC /* MyFeedTableViewController.swift */,
 				A91B4B581A83B40F001A0427 /* FeedCell.swift */,
+				A99D76601A83FB0E00D4011A /* MapViewController.swift */,
 			);
 			name = "Main Feeds & Login";
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			children = (
 				A94B05201A811763008FAFBC /* NewSeat.storyboard */,
 				A94B05291A815208008FAFBC /* NewSeatViewController.swift */,
+				A91B4B5C1A83CFBB001A0427 /* VenuesTableViewController.swift */,
 			);
 			name = "New Seat";
 			sourceTree = "<group>";
@@ -305,13 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91B4B5B1A83CF32001A0427 /* FourSquareRequest.swift in Sources */,
 				A91B4B591A83B40F001A0427 /* FeedCell.swift in Sources */,
 				A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */,
+				A99D76611A83FB0E00D4011A /* MapViewController.swift in Sources */,
 				A94B05281A81313D008FAFBC /* MyFeedTableViewController.swift in Sources */,
 				A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */,
 				A91B4B561A815B75001A0427 /* FeedData.swift in Sources */,
 				A94B052A1A815208008FAFBC /* NewSeatViewController.swift in Sources */,
 				A94B05261A813101008FAFBC /* FeedTableViewController.swift in Sources */,
+				A91B4B5D1A83CFBB001A0427 /* VenuesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @IBOutlet weak var seatNameField: UITextField!
     @IBOutlet weak var seatImageView: UIImageView!
+    @IBOutlet weak var selectVenueButton: UIButton!
     
     var imagePicker = UIImagePickerController()
     
@@ -26,6 +27,23 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
         seatNameField.delegate = self
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let venue = FeedData.mainData().selectedVenue {
+            
+            let venueName = venue["name"] as String
+            
+            selectVenueButton.setTitle(venueName + " (edit)", forState: .Normal)
+            
+        } else {
+            
+            selectVenueButton.setTitle("Select Venue", forState: .Normal)
+            
+        }
+        
     }
     
     @IBAction func takePicture(sender: AnyObject) {
@@ -68,7 +86,7 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
         // create PFObject and add it to seats
         var newSeat = PFObject(className: "Seat")
         newSeat["name"] = seatNameField.text
-//        newSeat["creator"] = PFUser.currentUser()
+        newSeat["creator"] = PFUser.currentUser()
         
         // change files size
         
@@ -77,6 +95,12 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
         let imageData = UIImagePNGRepresentation(image)
         let imageFile = PFFile(name: "seat.png", data: imageData)
         newSeat["image"] = imageFile
+        
+        if let venue = FeedData.mainData().selectedVenue {
+
+            newSeat["venue"] = venue
+            
+        }
         
         newSeat.saveInBackground()
         
