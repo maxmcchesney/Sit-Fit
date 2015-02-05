@@ -12,6 +12,7 @@
 		A91B4B511A815759001A0427 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91B4B501A815759001A0427 /* SystemConfiguration.framework */; };
 		A91B4B531A815777001A0427 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A91B4B521A815777001A0427 /* libsqlite3.dylib */; };
 		A91B4B561A815B75001A0427 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B551A815B75001A0427 /* FeedData.swift */; };
+		A91B4B571A825FB2001A0427 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052D1A815481008FAFBC /* Parse.framework */; };
 		A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B04FE1A810FAF008FAFBC /* AppDelegate.swift */; };
 		A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B05001A810FAF008FAFBC /* LoginViewController.swift */; };
 		A94B05041A810FAF008FAFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94B05021A810FAF008FAFBC /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		A94B05281A81313D008FAFBC /* MyFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B05271A81313D008FAFBC /* MyFeedTableViewController.swift */; };
 		A94B052A1A815208008FAFBC /* NewSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B05291A815208008FAFBC /* NewSeatViewController.swift */; };
 		A94B05311A815481008FAFBC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052C1A815481008FAFBC /* Bolts.framework */; };
-		A94B05321A815481008FAFBC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052D1A815481008FAFBC /* Parse.framework */; };
 		A94B05331A815481008FAFBC /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052E1A815481008FAFBC /* ParseCrashReporting.framework */; };
 		A94B05341A815481008FAFBC /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052F1A815481008FAFBC /* ParseFacebookUtils.framework */; };
 		A94B05351A815481008FAFBC /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B05301A815481008FAFBC /* ParseUI.framework */; };
@@ -75,10 +75,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91B4B531A815777001A0427 /* libsqlite3.dylib in Frameworks */,
+				A91B4B571A825FB2001A0427 /* Parse.framework in Frameworks */,
 				A91B4B511A815759001A0427 /* SystemConfiguration.framework in Frameworks */,
 				A91B4B4F1A815744001A0427 /* MobileCoreServices.framework in Frameworks */,
 				A91B4B4B1A815709001A0427 /* AudioToolbox.framework in Frameworks */,
-				A94B05321A815481008FAFBC /* Parse.framework in Frameworks */,
 				A94B05331A815481008FAFBC /* ParseCrashReporting.framework in Frameworks */,
 				A94B05351A815481008FAFBC /* ParseUI.framework in Frameworks */,
 				A94B05341A815481008FAFBC /* ParseFacebookUtils.framework in Frameworks */,
