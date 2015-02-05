@@ -13,6 +13,7 @@
 		A91B4B531A815777001A0427 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A91B4B521A815777001A0427 /* libsqlite3.dylib */; };
 		A91B4B561A815B75001A0427 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B551A815B75001A0427 /* FeedData.swift */; };
 		A91B4B571A825FB2001A0427 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052D1A815481008FAFBC /* Parse.framework */; };
+		A91B4B591A83B40F001A0427 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B4B581A83B40F001A0427 /* FeedCell.swift */; };
 		A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B04FE1A810FAF008FAFBC /* AppDelegate.swift */; };
 		A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B05001A810FAF008FAFBC /* LoginViewController.swift */; };
 		A94B05041A810FAF008FAFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94B05021A810FAF008FAFBC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		A91B4B501A815759001A0427 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A91B4B521A815777001A0427 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A91B4B551A815B75001A0427 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		A91B4B581A83B40F001A0427 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A94B04F91A810FAF008FAFBC /* Sit Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sit Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94B04FD1A810FAF008FAFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94B04FE1A810FAF008FAFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				A94B05001A810FAF008FAFBC /* LoginViewController.swift */,
 				A94B05251A813101008FAFBC /* FeedTableViewController.swift */,
 				A94B05271A81313D008FAFBC /* MyFeedTableViewController.swift */,
+				A91B4B581A83B40F001A0427 /* FeedCell.swift */,
 			);
 			name = "Main Feeds & Login";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91B4B591A83B40F001A0427 /* FeedCell.swift in Sources */,
 				A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */,
 				A94B05281A81313D008FAFBC /* MyFeedTableViewController.swift in Sources */,
 				A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */,

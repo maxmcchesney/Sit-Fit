@@ -56,13 +56,13 @@ class FeedTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("feedCell", forIndexPath: indexPath) as UITableViewCell
-
         
+        let cell = tableView.dequeueReusableCellWithIdentifier("feedCell", forIndexPath: indexPath) as FeedCell
+
         let seat = FeedData.mainData().feedItems[indexPath.row]
         
-        cell.textLabel?.text = seat["name"] as? String
-        
+        cell.seatInfo = seat
+                
         // Configure the cell...
 
         return cell

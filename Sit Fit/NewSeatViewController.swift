@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     // var seats: [PFObject]?
     
@@ -22,6 +22,8 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
 
         imagePicker.delegate = self
         imagePicker.sourceType = .Camera
+        
+        seatNameField.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -42,13 +44,40 @@ class NewSeatViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    func resizeImage(image: UIImage, withSize size: CGSize) -> UIImage {
+        
+        UIGraphicsBeginImageContext(size)
+        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+        
+    }
     
     @IBAction func saveSeat(sender: AnyObject) {
         
         // create PFObject and add it to seats
         var newSeat = PFObject(className: "Seat")
         newSeat["name"] = seatNameField.text
-        newSeat["creator"] = PFUser.currentUser()
+//        newSeat["creator"] = PFUser.currentUser()
+        
+        // change files size
+        
+        let image = resizeImage(seatImageView.image!, withSize: CGSizeMake(540, 540))
+        
+        let imageData = UIImagePNGRepresentation(image)
+        let imageFile = PFFile(name: "seat.png", data: imageData)
+        newSeat["image"] = imageFile
+        
         newSeat.saveInBackground()
         
         FeedData.mainData().feedItems.append(newSeat)
