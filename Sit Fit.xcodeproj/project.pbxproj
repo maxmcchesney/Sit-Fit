@@ -31,6 +31,8 @@
 		A94B05341A815481008FAFBC /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B052F1A815481008FAFBC /* ParseFacebookUtils.framework */; };
 		A94B05351A815481008FAFBC /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94B05301A815481008FAFBC /* ParseUI.framework */; };
 		A99D76611A83FB0E00D4011A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D76601A83FB0E00D4011A /* MapViewController.swift */; };
+		A99D76641A85063500D4011A /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D76631A85063500D4011A /* ArrowButton.swift */; };
+		A99D76661A85168500D4011A /* SeatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D76651A85168500D4011A /* SeatDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		A94B05301A815481008FAFBC /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		A94B05361A815500008FAFBC /* Sit Fit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sit Fit-Bridging-Header.h"; sourceTree = "<group>"; };
 		A99D76601A83FB0E00D4011A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A99D76631A85063500D4011A /* ArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		A99D76651A85168500D4011A /* SeatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		A94B04FB1A810FAF008FAFBC /* Sit Fit */ = {
 			isa = PBXGroup;
 			children = (
+				A99D76621A85059500D4011A /* IBViews */,
 				A91B4B541A815B13001A0427 /* Models */,
 				A94B05231A813056008FAFBC /* Main Feeds & Login */,
 				A94B05241A81306E008FAFBC /* New Seat */,
@@ -182,6 +187,7 @@
 				A94B05271A81313D008FAFBC /* MyFeedTableViewController.swift */,
 				A91B4B581A83B40F001A0427 /* FeedCell.swift */,
 				A99D76601A83FB0E00D4011A /* MapViewController.swift */,
+				A99D76651A85168500D4011A /* SeatDetailViewController.swift */,
 			);
 			name = "Main Feeds & Login";
 			sourceTree = "<group>";
@@ -211,6 +217,14 @@
 				A94B05301A815481008FAFBC /* ParseUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A99D76621A85059500D4011A /* IBViews */ = {
+			isa = PBXGroup;
+			children = (
+				A99D76631A85063500D4011A /* ArrowButton.swift */,
+			);
+			name = IBViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +333,10 @@
 				A94B05011A810FAF008FAFBC /* LoginViewController.swift in Sources */,
 				A99D76611A83FB0E00D4011A /* MapViewController.swift in Sources */,
 				A94B05281A81313D008FAFBC /* MyFeedTableViewController.swift in Sources */,
+				A99D76641A85063500D4011A /* ArrowButton.swift in Sources */,
 				A94B04FF1A810FAF008FAFBC /* AppDelegate.swift in Sources */,
 				A91B4B561A815B75001A0427 /* FeedData.swift in Sources */,
+				A99D76661A85168500D4011A /* SeatDetailViewController.swift in Sources */,
 				A94B052A1A815208008FAFBC /* NewSeatViewController.swift in Sources */,
 				A94B05261A813101008FAFBC /* FeedTableViewController.swift in Sources */,
 				A91B4B5D1A83CFBB001A0427 /* VenuesTableViewController.swift in Sources */,

@@ -95,7 +95,7 @@
         <scene sceneID="Jpo-re-nZX">
             <objects>
                 <tableViewController id="Z9u-sl-XPx" customClass="FeedTableViewController" customModule="Sit_Fit" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="22" sectionFooterHeight="22" id="HFs-5v-H5T">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="HFs-5v-H5T">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,8 +105,11 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zyo-lT-i63" id="oeP-lp-9hv">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piv-W9-CpD">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="piv-W9-CpD">
                                             <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="Hoa-bC-6cs"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmP-fU-zZJ">
                                             <rect key="frame" x="204" y="10" width="247" height="36"/>
@@ -115,11 +118,15 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="piv-W9-CpD" firstAttribute="leading" secondItem="oeP-lp-9hv" secondAttribute="leading" constant="10" id="cPk-wN-tna"/>
+                                        <constraint firstItem="piv-W9-CpD" firstAttribute="top" secondItem="oeP-lp-9hv" secondAttribute="top" constant="10" id="h07-gW-FbI"/>
+                                        <constraint firstAttribute="bottom" secondItem="piv-W9-CpD" secondAttribute="bottom" constant="10" id="lbg-f0-1jt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="seatImageView" destination="piv-W9-CpD" id="ITb-ij-TwD"/>
                                     <outlet property="seatNameLabel" destination="XmP-fU-zZJ" id="7mV-bD-tGc"/>
-                                    <segue destination="EZM-Is-MED" kind="show" id="luL-uY-R4C"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -138,13 +145,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZY-m6-pSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="35"/>
+            <point key="canvasLocation" x="2690" y="35"/>
         </scene>
         <!--My Seats-->
         <scene sceneID="fWy-Yc-S82">
             <objects>
                 <tableViewController id="dfA-dl-al5" customClass="MyFeedTableViewController" customModule="Sit_Fit" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M6m-1S-gz8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="M6m-1S-gz8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,8 +161,11 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tue-rh-IEa" id="y2D-hR-4ZU">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jNN-cr-Rjt">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNN-cr-Rjt">
                                             <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="2jE-QO-LG4"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8S-SM-Xbd">
                                             <rect key="frame" x="204" y="10" width="247" height="36"/>
@@ -164,6 +174,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="jNN-cr-Rjt" secondAttribute="bottom" constant="10" id="Q8D-2L-gXB"/>
+                                        <constraint firstItem="jNN-cr-Rjt" firstAttribute="leading" secondItem="y2D-hR-4ZU" secondAttribute="leading" constant="10" id="n0e-Zg-tld"/>
+                                        <constraint firstItem="jNN-cr-Rjt" firstAttribute="top" secondItem="y2D-hR-4ZU" secondAttribute="top" constant="10" id="vpA-JD-TQb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="seatImageView" destination="jNN-cr-Rjt" id="YLa-tc-oFK"/>
@@ -186,30 +201,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VD2-Bh-iUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="758"/>
+            <point key="canvasLocation" x="2690" y="758"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="lAf-Uw-gUK">
-            <objects>
-                <viewController id="EZM-Is-MED" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="z3r-v5-04l"/>
-                        <viewControllerLayoutGuide type="bottom" id="Gcb-cp-JdF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="X68-je-pL1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="acK-ou-ArE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3450" y="35"/>
-        </scene>
-        <!--View Controller-->
+        <!--Seat Detail View Controller-->
         <scene sceneID="b0B-7O-yBl">
             <objects>
-                <viewController id="aDp-Vu-CIf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="seatDetailVC" id="aDp-Vu-CIf" customClass="SeatDetailViewController" customModule="Sit_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1sc-UZ-Ypd"/>
                         <viewControllerLayoutGuide type="bottom" id="S0A-ym-A9b"/>
@@ -217,12 +214,27 @@
                     <view key="view" contentMode="scaleToFill" id="24Y-wc-S9V">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQc-fl-OgX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-eD-46Q">
+                                <rect key="frame" x="16" y="222" width="309" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="seatImageView" destination="MQc-fl-OgX" id="tIa-E8-vEr"/>
+                        <outlet property="seatNameLabel" destination="BXb-eD-46Q" id="U9M-9y-i1N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBU-tQ-9xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3450" y="758"/>
+            <point key="canvasLocation" x="1978" y="1500"/>
         </scene>
         <!--Map-->
         <scene sceneID="jpb-Sk-Emu">
@@ -239,7 +251,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqg-qm-8k5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="1104"/>
+            <point key="canvasLocation" x="1249" y="1124"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="mNf-bQ-mcR">
@@ -272,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIN-8f-kjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="1811"/>
+            <point key="canvasLocation" x="1249" y="1869"/>
         </scene>
         <!--My Seats-->
         <scene sceneID="Obv-sq-dfV">
@@ -289,7 +301,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NcF-1E-BKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="758"/>
+            <point key="canvasLocation" x="1978" y="758"/>
         </scene>
         <!--All Seats-->
         <scene sceneID="x4d-Jm-eGd">
@@ -306,7 +318,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRt-65-Rlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="35"/>
+            <point key="canvasLocation" x="1978" y="35"/>
         </scene>
     </scenes>
 </document>
